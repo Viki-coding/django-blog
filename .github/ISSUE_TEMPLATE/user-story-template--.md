@@ -1,11 +1,14 @@
 ---
-name: 'USER STORY: '
-about: As a **role** I can **capability** so that **received benefit**.
+name: 'USER STORY TEMPLATE: '
+about: User Story heading
 title: ''
 labels: ''
 assignees: ''
 
 ---
+
+EPIC: <epic>
+As a **role** I can **capability** so that **received benefit**.
 
 ACCEPTANCE CRITERIA:
 (checklist for items that need to be accomplished)
