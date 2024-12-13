@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-vrzm9rslr1r!t5w+p0m5f8_b5f5jytw)v(&zombo*%8vhn92=7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["8000-vikicoding-djangoblog-q6ux199ifh7.ws.codeinstitute-ide.net",'.herokuapp.com', '8000-vikicoding-djangoblog-l0bu3m538wp.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ["http://8000-vikicoding-djangoblog-l0bu3m538wp.ws.codeinstitute-ide.net/?vscodeBrowserReqId=1734100195099", "8000-vikicoding-djangoblog-l0bu3m538wp.ws.codeinstitute-ide.net'. You may need to add '8000-vikicoding-djangoblog-l0bu3m538wp.ws.codeinstitute-ide.net", "https://5500-vikicoding-djangoblog-l0bu3m538wp.ws.codeinstitute-ide.net/blog/", ".herokuapp.com"]
 
 
 # Application definition
