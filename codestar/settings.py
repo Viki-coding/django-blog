@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-vrzm9rslr1r!t5w+p0m5f8_b5f5jytw)v(&zombo*%8vhn92=7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["8000-vikicoding-djangoblog-l0bu3m538wp.ws.codeinstitute-ide.net", ".herokuapp.com"]
+ALLOWED_HOSTS = ["8000-vikicoding-djangoblog-l0bu3m538wp.ws.codeinstitute-ide.net", ".herokuapp.com", "localhost"]
 
 # Application definition
 
@@ -39,9 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'django_summernote',
     'blog',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -129,9 +131,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_URL = '/static/'
+STATICFILES_STORAGE =
+'cloudinary_storage.storage.StaticHashedCloudinaryS
+torage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR,
+'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE =
+'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
